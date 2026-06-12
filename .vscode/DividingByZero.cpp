@@ -14,7 +14,6 @@ int main ()
     int num1 = 9;
     //The quotient is calculated.
     int quotient = num1/0;
-    //The quotient is printed to the console.
     cout << "The quotient of " << num1 << " and " << 0 << " is " << quotient;
     return 0;
 }
