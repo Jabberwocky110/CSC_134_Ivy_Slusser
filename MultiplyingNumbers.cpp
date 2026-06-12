@@ -14,6 +14,6 @@ int main ()
     int num2 = 8;
     //The product is calculated.
     int product = num1 * num2;
-    cout << "The product of " << num1 << "and " << num2 << "is " << product;
+    cout << "The product of " << num1 << " and " << num2 << " is " << product;
     return 0;
 }
