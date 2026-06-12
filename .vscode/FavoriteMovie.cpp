@@ -8,7 +8,7 @@
 //Use namespace to avoid typing std
 using namespace std;
 //A function is created.
-string main ()
+int main ()
 {
     cout << "My favorite movie is The Lord of the Rings";
     return 0;
