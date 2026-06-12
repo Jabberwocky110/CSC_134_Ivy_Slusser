@@ -8,13 +8,8 @@
 //Use namespace to avoid typing std
 using namespace std;
 //A function is created.
-int main ()
+string main ()
 {
-    //There are two integers.
-    int num1 = 3;
-    int num2 = 8;
-    //The product is calculated.
-    int product = num1 * num2;
-    cout << "The product of " << num1 << "and " << num2 << "is " << product;
+    cout << "My favorite movie is The Lord of the Rings";
     return 0;
 }
