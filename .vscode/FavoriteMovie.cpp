@@ -10,6 +10,7 @@ using namespace std;
 //A function is created.
 int main ()
 {
+    //The movie is printed.
     cout << "My favorite movie is The Lord of the Rings";
     return 0;
 }
