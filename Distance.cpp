@@ -9,9 +9,12 @@
 using namespace std;
 int main()
 {
+   //Values for velocity and time
    int v = 80;
    int t = 2;
+   //Distance is calculated.
    int x = v * t;
+   //The result is printed.
    cout << "The distance traveled is " << x << " miles.";
    return 0;
 }
