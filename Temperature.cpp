@@ -18,4 +18,5 @@ int main ()
     double increase = 1.02;
     //The new temperatures are calculated and printed.
     cout << "The new average temperatures are: New York City: " << NewYorkCity * increase << " Denver: " << Denver * increase << " Phoenix: " << Phoenix * increase;
+    return 0;
 }
