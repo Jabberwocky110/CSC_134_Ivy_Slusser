@@ -14,7 +14,7 @@ int main ()
     int num1, num2, num3;
     cout << "Enter three numbers: ";
     //The user inputs three integers.
-    cin >> num1, num2, num3;
+    cin >> num1 >> num2 >> num3;
     //The numbers are added.
     double Average = num1 + num2 + num3;
     //The result is calculated.
