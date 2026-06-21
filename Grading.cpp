@@ -25,22 +25,22 @@ int main ()
     //The letter grade A is printed.
     cout << "A" << endl;
     }
-    if (YOUR_RESULT_HERE >= 80 && YOUR_RESULT_HERE <=89)
+    else if (YOUR_RESULT_HERE >= 80 && YOUR_RESULT_HERE <=89)
     {
     //The letter grade B is printed.
     cout << "B" << endl;
     }
-    if (YOUR_RESULT_HERE >= 70 && YOUR_RESULT_HERE <=79)
+    else if (YOUR_RESULT_HERE >= 70 && YOUR_RESULT_HERE <=79)
     {
     //The letter grade C is printed.
     cout << "C" << endl;
     }
-    if (YOUR_RESULT_HERE >= 60 && YOUR_RESULT_HERE <=69)
+    else if (YOUR_RESULT_HERE >= 60 && YOUR_RESULT_HERE <=69)
     {
     //The letter grade D is printed.
     cout << "D" << endl;
     }
-    if (YOUR_RESULT_HERE <= 59)
+    else if (YOUR_RESULT_HERE <= 59)
     {
     //The letter grade F is printed.
     cout << "F" << endl;
