@@ -40,7 +40,7 @@ int main ()
     //The letter grade D is printed.
     cout << "D" << endl;
     }
-    else if (YOUR_RESULT_HERE <= 59)
+    else if (0 <= YOUR_RESULT_HERE <= 59)
     {
     //The letter grade F is printed.
     cout << "F" << endl;
