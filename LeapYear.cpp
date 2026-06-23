@@ -25,7 +25,7 @@ int main ()
    {
       cout << "The year you entered " << year << " is a leap year.";
    }
-   //If the year does not meet th conditions for a leap year, it is printed that the year is not a leap year. 
+   //If the year does not meet the conditions for a leap year, it is printed that the year is not a leap year. 
    else
    {
       cout << "The year you entered " << year << " is NOT a leap year.";
