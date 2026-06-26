@@ -34,4 +34,5 @@ int main ()
     {
         cout << "This is NOT a 3-4-5 triangle";
     }
+    return 0;
 }

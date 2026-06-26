@@ -1,7 +1,7 @@
 /*
 @author: Ivy Slusser
-@date: 06/25/2026
-@purpose: This program generates an infinite loop.
+@date: 06/26/2026
+@purpose: This program calculates the average of ten grades.
 */
 //Include the iostream library for input and output
 #include <iostream>
@@ -11,17 +11,16 @@ using namespace std;
 int main ()
 {
    int GradeCount = 1;
-   float score;
+   float score = 0;
    float Grade;
-   while (0 < GradeCount <= 10)
+   while (GradeCount <= 10)
    {
-      float PreviousGrade = Grade;
-      score = Grade + PreviousGrade;
-      float Grade;
-      cout << "Enter grade " << GradeCount;
+      cout << "Enter grade " << GradeCount << " \n";
       cin >> Grade;
       GradeCount++;
+      score += Grade;
    }
    float Average = score/10;
    cout << "Your average grade is " << Average;
+   return 0;
 }

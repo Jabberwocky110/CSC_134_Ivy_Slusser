@@ -20,4 +20,5 @@ int main ()
        //The counter increases after each iteration inifnitely. 
        count++;
    }
+   return 0;
 }
