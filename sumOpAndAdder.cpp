@@ -18,7 +18,7 @@ int main()
    {
       //The sum is calculated.
       sumOp += adder + count;
-      //The sum is printed.
-      cout << sumOp;
+      //The sum is printed for the entirety of the loop and that individual iteration.
+      cout << sumOp << adder + count;
    }
 }
