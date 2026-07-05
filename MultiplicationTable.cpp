@@ -10,5 +10,13 @@ using namespace std;
 //A function is created.
 int main()
 {
-
+   int number;
+   cout << "Enter a number: ";
+   cin >> number;
+   cout << "Number | Number Multiplied" << endl;
+   cout << "---------------------------" << endl;
+   for (int count = 0; count <= 12; count++)
+   {
+      cout << number << " " << number * count << endl;
+   }
 }
