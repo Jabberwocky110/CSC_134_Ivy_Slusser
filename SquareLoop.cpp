@@ -25,11 +25,11 @@ int main()
       }
       else if (minNum >= 10 && minNum < 100)
       {
-        cout << "      "  << minNum << "        " << minNum * minNum << endl;
+        cout << "      "  << minNum << "       " << minNum * minNum << endl;
       }
       else
       {
-        cout << "     "  << minNum << "        " << minNum * minNum << endl;
+        cout << "     "  << minNum << "       " << minNum * minNum << endl;
       }
    }
 }
