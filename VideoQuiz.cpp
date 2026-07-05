@@ -1,6 +1,6 @@
 /*
 @author: Ivy Slusser
-@date: 07/02/2026
+@date: 07/04/2026
 @purpose: This program calculates the average test scores of students in a class and whether individual students and the entire class passed.
 */
 //Include the iostream library for input and output
@@ -39,7 +39,7 @@ int main()
     {
         average = total / count;
     }
-    //The results, scores entered, passing scores, and average score are printed.
+    //A title, scores entered, passing scores, and average score are printed.
     cout << "\nResults" << endl;
     cout << "-------" << endl;
     cout << "Scores Entered: " << count << endl;
