@@ -10,5 +10,15 @@ using namespace std;
 //A function is created.
 int main()
 {
-
+    //Variables are created for the added value and the sum.
+   int sumOp = 0;
+   int adder = 10;
+   //The loop iterates 50 times.
+   for (int count = 0; count < 50; count++)
+   {
+      //The sum is calculated.
+      sumOp += adder + count;
+      //The sum is printed.
+      cout << sumOp;
+   }
 }
