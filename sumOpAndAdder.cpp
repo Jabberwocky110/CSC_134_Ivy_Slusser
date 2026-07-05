@@ -19,6 +19,6 @@ int main()
       //The sum is calculated.
       sumOp += adder + count;
       //The sum is printed for the entirety of the loop and that individual iteration.
-      cout << sumOp << " " << adder + count << endl;
+      cout << "The entire sum of all iterations is: " << sumOp << " The sum for this iteration is: " << adder + count << endl;
    }
 }
