@@ -14,13 +14,21 @@ int main()
    int number;
    cout << "Enter a number: ";
    cin >> number;
-   //This is the title for the table.
-   cout << "Number | Number Multiplied" << endl;
-   cout << "---------------------------" << endl;
-   //The loop iterates from 0 to 12.
-   for (int count = 0; count <= 12; count++)
+   //The table doesn't print for numbers out of bounds.
+   if (number > 12 || number < 0)
    {
-      //The number and its result are printed.
-      cout << number << " " << number * count << endl;
+     cout << "That number is beyond the bounds of typical multiplication tables.";
+   }
+   else
+   {
+      //This is the title for the table.
+      cout << "Number | Number Multiplied" << endl;
+      cout << "---------------------------" << endl;
+      //The loop iterates from 0 to 12.
+      for (int count = 0; count <= 12; count++)
+      {
+        //The number and its result are printed.
+        cout << number << " " << number * count << endl;
+      }
    }
 }
