@@ -15,7 +15,7 @@ int main()
    //This is the title for the table.
    cout << "Number | Number Squared " << endl;
    cout << "---------------------------" << endl;
-   //A loop iterates when a new variable, the minimum number in the table is less than the maximum number.
+   //A loop iterates when a new variable, the minimum number in the table is less than or equal to the maximum number.
    for (int minNum = 0; minNum <= maxNum; minNum++)
    {
       //The numbers are printed to the table, with one less space before the square if they are more digits.
