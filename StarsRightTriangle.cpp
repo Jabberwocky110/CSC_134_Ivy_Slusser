@@ -19,7 +19,7 @@ int main()
   //The outer loop iterates to make the triangle the height that the user designated.
   for (int count = 0; count < rows; count++)
   {
-    //To get rows that aren't equal to the user's number, the inner loop prints stars that are equal to the count of the outer loop.
+    //To get rows that aren't equal to the user's number and increase each time, the inner loop prints stars that are equal to the count of the outer loop.
      for (int counted = 0; counted <= count; counted++)
      {
         cout << star;
