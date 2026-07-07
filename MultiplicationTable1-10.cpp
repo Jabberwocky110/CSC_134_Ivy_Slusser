@@ -10,12 +10,15 @@ using namespace std;
 //A function is created.
 int main()
 {
-   for (int num = 0; num <=10; num++)
+   //Each loop includes numbers 1-10.
+   for (int num = 1; num <=10; num++)
    {
-     for (int number = 0; number <=10; number++)
+     for (int number = 1; number <=10; number++)
      {
-        cout << num * number << "     ";
+        //The numbers of each loop are multiplied and printed within the inner loop. The /t aligns the numbers.
+        cout << num * number << "\t";
      }
+     //As the outer loop iterates, it produces new lines.
      cout << endl;
    }
    return 0;
