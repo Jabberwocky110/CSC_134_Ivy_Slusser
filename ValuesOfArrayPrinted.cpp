@@ -24,5 +24,5 @@ int main()
   cout << "Enter the position (1-7) in the array that you would like to reference: " << endl;
   cin >> Position;
   //The position in the array that the user selected is printed.
-  cout << numberList[Position - 1] << endl;
+  cout << "The value is " << numberList[Position - 1] << endl;
 }
