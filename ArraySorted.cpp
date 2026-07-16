@@ -10,5 +10,6 @@ using namespace std;
 //A function is created.
 int main()
 {
-
+  const int TOTAL_SIZE = 10;
+  int numbers[TOTAL_SIZE] = {10, 90, 2, 25, 44, 88, 0, 4};
 }
