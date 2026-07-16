@@ -14,7 +14,7 @@ int main()
   const int ArrayNumber = 10;
   //A total is created for when the number of elements in the array are added.
   int total = 0;
-  //The array of grades is initialized to ten values.
+  //The array of grades is initialized with ten values.
   int GradeArray[ArrayNumber];
   //The user inputs ten grades.
   cout << "Round to the nearest whole number and enter the grades to be averaged: ";
