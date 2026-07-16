@@ -10,7 +10,7 @@ using namespace std;
 //A function is created.
 int main()
 {
-    //The months from Feburary to December are listed in an array.
+   //The months from Feburary to December are listed in an array.
    int MonthsArray[11] = {28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
    //The loop iterates from integers 2-12.
    for (int value = 2; value <= 12; value++)
