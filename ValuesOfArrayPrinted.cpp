@@ -1,7 +1,7 @@
 /*
 @author: Ivy Slusser
 @date: 07/16/2026
-@purpose: This program lists all eight planets and Pluto, using an array.
+@purpose: This program prints the values of an array by index and also allows the user to select a value to print.
 */
 //Include the iostream library for input and output
 #include <iostream>

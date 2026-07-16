@@ -1,7 +1,7 @@
 /*
 @author: Ivy Slusser
 @date: 07/16/2026
-@purpose: This program lists all eight planets and Pluto, using an array.
+@purpose: This program lists and prints the days of the week, using an array.
 */
 //Include the iostream library for input and output
 #include <iostream>
