@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
   //The initial value for the number of numbers in the array is created.
-  int ArrayNumber = 10;
+  const int ArrayNumber = 10;
   //A total is created for when the number of elements in the array are added.
   int total = 0;
   //The array of grades is initialized to ten values.
