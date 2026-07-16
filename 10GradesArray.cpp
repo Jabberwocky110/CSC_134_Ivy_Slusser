@@ -10,7 +10,7 @@ using namespace std;
 //A function is created.
 int main()
 {
-  int ArrayNumber;
+  int ArrayNumber = 10;
   int total = 0;
   int GradeArray[ArrayNumber];
   cout << "Round to the nearest whole number and enter the grades to be averaged: ";
