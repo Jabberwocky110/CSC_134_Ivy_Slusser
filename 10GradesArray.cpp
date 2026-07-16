@@ -28,6 +28,6 @@ int main()
   {
     total += GradeArray[value];
   }
-  float average = total/10.0;
+  double average = total/10.0;
   cout << "The average of your grades is " << average << ".";
 }
