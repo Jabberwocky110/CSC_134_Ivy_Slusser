@@ -10,9 +10,13 @@ using namespace std;
 //A function is created.
 int main()
 {
+  //The initial value for the number of numbers in the array is created.
   int ArrayNumber = 10;
+  //A total is created for when the number of elements in the array are added.
   int total = 0;
+  //The array of grades is initialized to ten values.
   int GradeArray[ArrayNumber];
+  //The user inputs ten grades.
   cout << "Round to the nearest whole number and enter the grades to be averaged: ";
   cin >> GradeArray[0];
   cin >> GradeArray[1];
@@ -24,10 +28,14 @@ int main()
   cin >> GradeArray[7];
   cin >> GradeArray[8];
   cin >> GradeArray[9];
+  //The grades in the array are added in a loop.
   for (int value = 0; value < ArrayNumber; value++)
   {
+    //The grades in the array are referenced by index.
     total += GradeArray[value];
   }
+  //The average is calculated.
   double average = total/10.0;
+  //The average is printed.
   cout << "The average of your grades is " << average << ".";
 }
