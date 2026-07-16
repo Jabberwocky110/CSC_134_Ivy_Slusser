@@ -10,9 +10,11 @@ using namespace std;
 //A function is created.
 int main()
 {
+   //The planets are included in an array.
    string PlanetsArray[9] = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"};
+   //The planets are printed by index in a loop.
    for (int value = 0; value < 9; value++)
    {
-      cout << "The planet: " << PlanetsArray[value];
+      cout << "The planet: " << PlanetsArray[value] << endl;
    }
 }
