@@ -12,25 +12,21 @@ int main()
 {
   const int TOTAL_SIZE = 10;
   int numbers[TOTAL_SIZE] = {10, 90, 2, 25, 44, 88, 0, 4};
-  int index = 0;
-  int NumbersSorted[TOTAL_SIZE] = {};
   for (int value = 0; value < TOTAL_SIZE; value++)
   {
-    for (int PreviousValue = numbers[index]; PreviousValue < TOTAL_SIZE; index++)
+    for (int PreviousValue = 0; PreviousValue < TOTAL_SIZE - value - 1; PreviousValue++)
     {
-     if (numbers[value + 1] <= PreviousValue)
+     if (numbers[PreviousValue] > numbers[PreviousValue + 1])
      {
-       NumbersSorted[PreviousValue] = numbers[value + 1];
-     }
-     else
-     {
-       NumbersSorted[PreviousValue] = numbers[value];
+       int temp = numbers[PreviousValue];
+       numbers[PreviousValue] = numbers[PreviousValue + 1];
+       numbers[PreviousValue + 1] = temp;
      }
     }
   }
   cout << "The array sorted is ";
   for  (int i = 0; i < TOTAL_SIZE; i++)
   {
-    cout << NumbersSorted[i] << " ";
+    cout << numbers[i] << " ";
   }
 }
