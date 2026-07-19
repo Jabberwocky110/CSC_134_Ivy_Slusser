@@ -19,10 +19,4 @@ int main()
   {
      cout << "Array value " << value + 1 << ": " << numberList[value] << endl;
   }
-  //The user is also able to select a position in the array to print.
-  int Position;
-  cout << "Enter the position (1-7) in the array that you would like to reference: " << endl;
-  cin >> Position;
-  //The position in the array that the user selected is printed.
-  cout << "The value is " << numberList[Position - 1] << endl;
 }
