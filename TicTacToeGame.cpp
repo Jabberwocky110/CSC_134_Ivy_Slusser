@@ -11,12 +11,13 @@ using namespace std;
 int main()
 {
    char board[3][3] = {
-      {' ', ' ', ' '}, 
-      {' ', ' ', ' '},
-      {' ', ' ', ' '}
+      {'1', '2', '3'}, 
+      {'4', '5', '6'},
+      {'7', '8', '9'}
       };
    char Player1Token = 'X';
    char Player2Token ='O';
+   char Selection;
    cout << "Player One is X. Player 2 is O. Here is the board: " << "\n";
    for (int i = 0; i < 3; i++)
    {
@@ -31,7 +32,48 @@ int main()
      cout << "\n";
      if (i < 2)
      {
-      cout << "--------" << "\n";
+      cout << "-----------" << "\n";
+     }
+   }
+   for (int value = 0; value < 9; value++)
+   {
+      int PlayerNumber = value % 2;
+      if (PlayerNumber == 0)
+      {
+        cout << "Player1 " << "enter where you want to enter your piece (1-9): ";
+        cin >> Selection;
+      }
+      else
+      {
+        cout << "Player2 " << "enter where you want to enter your piece (1-9): ";
+        cin >> Selection;
+      }
+      int choice = Selection - '1';
+      int row = choice / 3;
+      int column = choice % 3;
+      if (value % 2 == 0)
+      {
+         board[row][column] = Player1Token;
+      }
+      else
+      {
+         board[row][column] = Player2Token;
+      }
+   }
+    for (int i = 0; i < 3; i++)
+   {
+     for (int j = 0; j < 3; j++)
+     {
+        cout << " " << board[i][j] << " ";
+        if (j < 2)
+        {
+         cout << "|";
+        }
+     }
+     cout << "\n";
+     if (i < 2)
+     {
+      cout << "-----------" << "\n";
      }
    }
 }
