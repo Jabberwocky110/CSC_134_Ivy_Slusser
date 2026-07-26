@@ -10,7 +10,11 @@ using namespace std;
 //A function is created.
 int main()
 {
-   int board[3][3] = {};
+   char board[3][3] = {
+      {' ', ' ', ' '}, 
+      {' ', ' ', ' '},
+      {' ', ' ', ' '}
+      };
    char Player1Token = 'X';
    char Player2Token ='O';
    cout << "Player One is X. Player 2 is O. Here is the board: " << "\n";
@@ -18,8 +22,16 @@ int main()
    {
      for (int j = 0; j < 3; j++)
      {
-        cout << " |";
+        cout << " " << board[i][j] << " ";
+        if (j < 2)
+        {
+         cout << "|";
+        }
      }
-     cout << "\n" << "______" << "\n";
+     cout << "\n";
+     if (i < 2)
+     {
+      cout << "--------" << "\n";
+     }
    }
 }
