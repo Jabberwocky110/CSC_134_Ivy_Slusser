@@ -59,6 +59,26 @@ int main()
       {
          board[row][column] = Player2Token;
       }
+      if (board[row][0] == 'X' && board[row][1] == 'X' && board[row][2] == 'X')
+      {
+         cout << "Player1 wins!";
+         break;
+      }
+      if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
+      {
+         cout << "Player2 wins!";
+         break;
+      }
+      if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
+      {
+         cout << "Player1 wins!";
+         break;
+      }
+      if (board[0][column] == 'O' && board[1][column] == 'O' && board[2][column] == 'O')
+      {
+         cout << "Player2 wins!";
+         break;
+      }
    }
     for (int i = 0; i < 3; i++)
    {
