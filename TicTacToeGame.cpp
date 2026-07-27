@@ -107,11 +107,15 @@ int main()
          //The loop ends.
          break;
       }
+      //It is checked if there are three Os in a row.
       if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
       {
+         //If there are three Os in a row, Player Two wins.
          cout << "Player2 wins!" << "\n";
+         //The loop ends if any winning condition is true.
          break;
       }
+      //Here, the it is checked if there are three tokens in a column for either player.
       if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
       {
          cout << "Player1 wins!" << "\n";
@@ -122,31 +126,36 @@ int main()
          cout << "Player2 wins!" << "\n";
          break;
       }
+      //This statement checks if there are three of any token in a left-right diagonal.
      if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) 
      {
-       if (board[1][1] == 'X') 
+       //It is determined whether the diagonal token is X or O.
+       if (board[0][0] == 'X') 
        { 
         cout << "Player1 wins!" << "\n"; 
         break; 
        }
-       if (board[1][1] == 'O') 
+       else
        { 
          cout << "Player2 wins!" << "\n"; 
          break; 
        }
      }
+     //It is checked whether there are three of any token in a right left diagonal.
      if (board[0][2] == board[1][1] && board[1][1] == board[2][0]) 
      {
-       if (board[1][1] == 'X') 
+       //If the condition is true, it is determined whether the diagonal token was X or O.
+       if (board[0][2] == 'X') 
        { 
          cout << "Player1 wins!" << "\n"; 
          break; 
        }
-       if (board[1][1] == 'O') 
+       else
        { 
          cout << "Player2 wins!" << "\n"; 
          break; 
        }
+       //If all of the spaces on the board are taken, and none of the above conditions are true, it is printed that the game is a draw.
        if (value == 9)
        {
          cout << "It's a draw!";
