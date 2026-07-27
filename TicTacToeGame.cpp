@@ -50,6 +50,7 @@ int main()
    {
       //This is so that players can see whose turn it is.
       int PlayerNumber = value % 2;
+      //The player number is printed when players enter their tokens, and the selection is captured.
       if (PlayerNumber == 0)
       {
         cout << "Player1 " << "enter where you want to enter your piece (1-9): ";
@@ -60,32 +61,50 @@ int main()
         cout << "Player2 " << "enter where you want to enter your piece (1-9): ";
         cin >> Selection;
       }
+      //Players cannot enter a number less than one or greater than nine.
       if (Selection < '1' || Selection > '9') 
       {
+         //It is printed that the number is invalid input.
          cout << "Invalid input! Enter a number 1-9!" << "\n";
+         //The value decreases by one so that the game can still run for nine token placements.
          value--;
+         //The loop continues.
          continue;
       }
+      //The player's choice is converted to an index.
       int choice = Selection - '1';
+      //The row of the choice is determined by integer division.
       int row = choice / 3;
+      //The column is determined based on the row.
       int column = choice % 3;
+      //It is checked if a location already contains a token.
       if (board[row][column] == 'X' || board[row][column] == 'O') 
       {
+         //It is printed that that location is already taken.
          cout << "That spot is already taken!" << "\n";
+         //The value of placements decreases.
          value--;
+         //The loop continues.
          continue;
       }
+      //It is checked whether it is player 1 or 2's turn.
       if (value % 2 == 0)
       {
+         //An X is placed for player 1. 
          board[row][column] = Player1Token;
       }
       else
       {
+         //An O is placed for player 2.
          board[row][column] = Player2Token;
       }
+      //This is where the winning conditions are checked.
+      //It is checked if there are three Xs in a row.
       if (board[row][0] == 'X' && board[row][1] == 'X' && board[row][2] == 'X')
       {
+         //If there are three Xs in a row, Player 1 wins.
          cout << "Player1 wins!" << "\n";
+         //The loop ends.
          break;
       }
       if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
@@ -127,6 +146,10 @@ int main()
        { 
          cout << "Player2 wins!" << "\n"; 
          break; 
+       }
+       if (value == 9)
+       {
+         cout << "It's a draw!";
        }
      }
    }
