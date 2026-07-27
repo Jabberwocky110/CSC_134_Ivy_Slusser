@@ -68,7 +68,7 @@ int main()
          cout << "Invalid input! Enter a number 1-9!" << "\n";
          //The value decreases by one so that the game can still run for nine token placements.
          value--;
-         //The loop continues.
+         //The loop restarts.
          continue;
       }
       //The player's choice is converted to an index.
@@ -84,7 +84,7 @@ int main()
          cout << "That spot is already taken!" << "\n";
          //The value of placements decreases.
          value--;
-         //The loop continues.
+         //The loop restarts.
          continue;
       }
       //It is checked whether it is player 1 or 2's turn.
