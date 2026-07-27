@@ -73,34 +73,34 @@ int main()
       }
       if (board[row][0] == 'X' && board[row][1] == 'X' && board[row][2] == 'X')
       {
-         cout << "Player1 wins!";
+         cout << "Player1 wins!" << "\n";
          break;
       }
       if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
       {
-         cout << "Player2 wins!";
+         cout << "Player2 wins!" << "\n";
          break;
       }
       if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
       {
-         cout << "Player1 wins!";
+         cout << "Player1 wins!" << "\n";
          break;
       }
       if (board[0][column] == 'O' && board[1][column] == 'O' && board[2][column] == 'O')
       {
-         cout << "Player2 wins!";
+         cout << "Player2 wins!" << "\n";
          break;
       }
      if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) 
      {
        if (board[1][1] == 'X') 
        { 
-        cout << "Player1 wins!"; 
+        cout << "Player1 wins!" << "\n"; 
         break; 
        }
        if (board[1][1] == 'O') 
        { 
-         cout << "Player2 wins!"; 
+         cout << "Player2 wins!" << "\n"; 
          break; 
        }
      }
@@ -108,12 +108,12 @@ int main()
      {
        if (board[1][1] == 'X') 
        { 
-         cout << "Player1 wins!"; 
+         cout << "Player1 wins!" << "\n"; 
          break; 
        }
        if (board[1][1] == 'O') 
        { 
-         cout << "Player2 wins!"; 
+         cout << "Player2 wins!" << "\n"; 
          break; 
        }
      }
