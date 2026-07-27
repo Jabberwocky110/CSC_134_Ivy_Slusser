@@ -64,21 +64,47 @@ int main()
          cout << "Player1 wins!";
          break;
       }
-      else if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
+      if (board[row][0] == 'O' && board[row][1] == 'O' && board[row][2] == 'O')
       {
          cout << "Player2 wins!";
          break;
       }
-      else if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
+      if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
       {
          cout << "Player1 wins!";
          break;
       }
-      else if (board[0][column] == 'O' && board[1][column] == 'O' && board[2][column] == 'O')
+      if (board[0][column] == 'O' && board[1][column] == 'O' && board[2][column] == 'O')
       {
          cout << "Player2 wins!";
          break;
       }
+     if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) 
+     {
+       if (board[1][1] == 'X') 
+       { 
+        cout << "Player1 wins!"; 
+        break; 
+       }
+       if (board[1][1] == 'O') 
+       { 
+         cout << "Player2 wins!"; 
+         break; 
+       }
+     }
+     if (board[0][2] == board[1][1] && board[1][1] == board[2][0]) 
+     {
+       if (board[1][1] == 'X') 
+       { 
+         cout << "Player1 wins!"; 
+         break; 
+       }
+       if (board[1][1] == 'O') 
+       { 
+         cout << "Player2 wins!"; 
+         break; 
+       }
+     }
    }
     for (int i = 0; i < 3; i++)
    {
