@@ -162,10 +162,12 @@ int main()
        }
      }
    }
+   //The board is printed at the end of the game.
     for (int i = 0; i < 3; i++)
    {
      for (int j = 0; j < 3; j++)
      {
+      //The tokens and possible remaining numbers on the board are printed.
         cout << " " << board[i][j] << " ";
         if (j < 2)
         {
