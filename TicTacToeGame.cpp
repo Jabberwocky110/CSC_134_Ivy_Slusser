@@ -48,9 +48,21 @@ int main()
         cout << "Player2 " << "enter where you want to enter your piece (1-9): ";
         cin >> Selection;
       }
+      if (Selection < '1' || Selection > '9') 
+      {
+         cout << "Invalid input! Enter a number 1-9!" << "\n";
+         value--;
+         continue;
+      }
       int choice = Selection - '1';
       int row = choice / 3;
       int column = choice % 3;
+      if (board[row][column] == 'X' || board[row][column] == 'O') 
+      {
+         cout << "That spot is already taken!" << "\n";
+         value--;
+         continue;
+      }
       if (value % 2 == 0)
       {
          board[row][column] = Player1Token;
