@@ -1,0 +1,4 @@
+Sales for Day1: 1
+Sales for Day2: 23
+Sales for Day3: 23
+Sales for Day4: 4
